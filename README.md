@@ -11,6 +11,7 @@
 * **- APIGateway:** APIGateway directory: `Authorizers`, `REST APIGateway` and `Websockets APIGateway`, 
 * **- Cognito:** Cognito directory has `user_pool.yml` where are all Cognito resources
 * **- DynamoDB Tables:** DynamoDB directory with files for each table
+* **- S3 Buckets:** S3Buckets directory with files for each bucket
 
 
 ## Functions(Lambdas) Architecture
