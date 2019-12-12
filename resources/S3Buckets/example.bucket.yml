@@ -1,0 +1,9 @@
+Resources:
+  ExampleBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:custom.prefix}-example-bucket
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256

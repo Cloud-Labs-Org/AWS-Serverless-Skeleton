@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": [
+        "src/*"
+      ],
+      "@test/*": [
+        "spec/*"
+      ]
+    },
+    "sourceMap": true,
+    "declaration": false,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "strictNullChecks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    ".serverless"
+  ]
+}

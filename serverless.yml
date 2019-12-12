@@ -1,0 +1,82 @@
+app: serverless-skeleton
+service: ${self:app}
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: ${opt:region, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
+  stackName: ${self:app}
+
+#  If you have a web sockets API
+#  websocketsApiName: ${self:app}-websockets
+#  websocketsApiRouteSelectionExpression: $request.body.action
+
+#  Turn On X-Ray
+#  tracing:
+#    apiGateway: true
+#    lambda: true
+
+  apiName: ${self:app}
+  apiGateway:
+    apiKeySourceType: HEADER
+  apiKeys:
+    - free:
+      - name: ${self:custom.prefix}-free-APIKEY
+  usagePlan:
+    - free:
+        quota:
+          limit: 5000
+          period: MONTH
+        throttle:
+          burstLimit: 500
+          rateLimit: 100
+
+# Global environments
+  environment:
+    REGION: ${self:provider.region}
+#    USER_POOL_ID: { Ref: UserPool }
+#    CLIENT_POOL_ID: { Ref: UserPoolClient }
+#    DYNAMODB_TABLE_NAME: { Ref: ExampleTable }
+
+
+plugins:
+  - serverless-webpack
+  - serverless-iam-roles-per-function
+
+
+custom:
+  prefix: ${self:service}-${self:provider.region}-${self:provider.stage}
+  config: ${file(env/${self:provider.stage}-${self:provider.region}.yml)}
+  tableNames:
+    exampleTable: ${self:custom.prefix}-example-table
+  webpack:
+    includeModules:
+      forceExclude:
+        - aws-sdk
+
+package:
+#  Uncomment if you want to deploy each lambda separately
+#  individually: true
+  excludeDevDependencies: true
+  exclude:
+    - ./**/*.spec.ts
+
+
+functions:
+  - ${file(functions/hello_world.yml)}
+
+
+#resources:
+  # S3 Buckets
+#  - ${file(resources/S3Buckets/example.bucket.yml)}
+
+  # APIGateway Resources
+#  - ${file(resources/APIGateway/cognito.authorizer.yml)}
+
+    # Cognito Resources
+#  - ${file(resources/Cognito/users.pool.yml)}
+#  - ${file(resources/Cognito/users.pool-client.yml)}
+
+    # DynamoDB Resources
+#  - ${file(resources/DynamoDB/example.table.yml)}
+

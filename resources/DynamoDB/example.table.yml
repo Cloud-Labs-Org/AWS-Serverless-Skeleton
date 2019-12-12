@@ -1,0 +1,45 @@
+Resources:
+# Logical Id
+  ExampleTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    Properties:
+      TableName: ${self:custom.tableNames.exampleTable}
+      AttributeDefinitions:
+        - AttributeName: pKey
+          AttributeType: S
+        - AttributeName: rKey
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pKey
+          KeyType: HASH
+        - AttributeName: rKey
+          KeyType: RANGE
+#     OnDemain Billing
+      BillingMode: PAY_PER_REQUEST
+
+#      Example for Global Secondary Indexes
+#      GlobalSecondaryIndexes:
+#        - IndexName: {IndexName}
+#          KeySchema:
+#            - AttributeName:
+#              KeyType: HASH
+#            - AttributeName:
+#              KeyType: RANGE
+#          Projection:
+#            ProjectionType: ALL
+
+#      Example for Local Secondary Indexes
+#      LocalSecondaryIndexes:
+#        - IndexName: {IndexName}
+#          KeySchema:
+#            - AttributeName:
+#              KeyType: HASH
+#            - AttributeName:
+#              KeyType: RANGE
+#          Projection:
+#            ProjectionType: ALL
+
+#      Example for Table Stream
+#      StreamSpecification:
+#        StreamViewType: NEW_IMAGE
