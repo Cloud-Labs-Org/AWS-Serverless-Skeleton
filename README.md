@@ -5,7 +5,7 @@
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Build Status](https://api.travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton.svg?branch=master)](https://api.travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton)
 [![codecov]()]()
-[![Known Vulnerabilities]](https://github.com/Cloud-Labs-Org/AWS-Serverless-Skeleton/issues)
+[![Known Vulnerabilities]()](https://github.com/Cloud-Labs-Org/AWS-Serverless-Skeleton/issues)
 [![license|MIT](https://github.com/Cloud-Labs-Org/AWS-Serverless-Skeleton/blob/master/LICENSE)]
 
 > Here is a list of libraries, tools, extensions, etc. that need to be installed to run the project.
