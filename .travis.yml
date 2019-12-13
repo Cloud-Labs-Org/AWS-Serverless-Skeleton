@@ -1,0 +1,9 @@
+language: node_js
+branches:
+  only: # Do not build PR branches
+    # Release branches
+    - master
+scripts:
+  - npm install codecov -g
+after_success:
+  - codecov --token=55a7cfb1-b771-454e-981a-9df2db0f992c

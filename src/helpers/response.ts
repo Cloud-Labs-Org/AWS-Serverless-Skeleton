@@ -1,5 +1,5 @@
 import { APIGatewayProxyResult } from 'aws-lambda';
-import { HttpRequestError } from 'src/helpers';
+import { HttpRequestError } from 'src/helpers/http-request-error';
 
 export const response = async (
   callback: (...any) => any,

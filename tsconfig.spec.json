@@ -1,5 +1,4 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "target": "es2017",
     "lib": [
@@ -18,19 +17,11 @@
     "outDir": "dist",
     "sourceMap": true,
     "declaration": false,
-    "removeComments": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "strictNullChecks": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
     "types": [
       "node",
       "mocha"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
     ]
   },
   "rootDirs": [
@@ -38,11 +29,11 @@
     "test"
   ],
   "include": [
-    "src"
+    "src",
+    "test"
   ],
   "exclude": [
     "node_modules",
-    ".serverless",
-    "test"
+    ".serverless"
   ]
 }
