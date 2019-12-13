@@ -1,12 +1,12 @@
 # AWS Serverless Skeleton
 
 ## Based on Serverless Framework
-
+https://api.travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton.svg?branch=master
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Build Status](https://travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton.svg?branch=master)](https://travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton/builds)
 [![codecov](https://codecov.io/gh/Cloud-Labs-Org/AWS-Serverless-Skeleton/branch/master/graph/badge.svg)](https://codecov.io/gh/Cloud-Labs-Org/AWS-Serverless-Skeleton)
-[![issues]](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton)
-[![license]](https://img.shields.io/github/license/Cloud-Labs-Org/AWS-Serverless-Skeleton)
+[![issues](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/issues)
+[![license](https://img.shields.io/github/license/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/blob/master/LICENSE)
 
 > Here is a list of libraries, tools, extensions, etc. that need to be installed to run the project.
 
