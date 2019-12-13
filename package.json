@@ -14,6 +14,19 @@
     "url": "https://github.com/Cloud-Labs-Org/AWS-Serverless-Skeleton"
   },
   "license": "MIT",
+  "keywords": [
+    "serverless",
+    "serverless framework",
+    "aws",
+    "amazon",
+    "cloudformation",
+    "sam",
+    "skeleton",
+    "cognito",
+    "apigateway",
+    "apigatewayauthorizer",
+    "s3"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
