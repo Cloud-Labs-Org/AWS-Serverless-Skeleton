@@ -1,12 +1,19 @@
 # AWS Serverless Skeleton
 
 ## Based on Serverless Framework
-https://api.travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton.svg?branch=master
+
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Build Status](https://travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton.svg?branch=master)](https://travis-ci.com/Cloud-Labs-Org/AWS-Serverless-Skeleton/builds)
 [![codecov](https://codecov.io/gh/Cloud-Labs-Org/AWS-Serverless-Skeleton/branch/master/graph/badge.svg)](https://codecov.io/gh/Cloud-Labs-Org/AWS-Serverless-Skeleton)
 [![issues](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/issues)
 [![license](https://img.shields.io/github/license/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/blob/master/LICENSE)
+
+## What to expect
+
+> The easiest way to start with serverless. Everithing is ready and if you want something just uncomment the code about that.
+> There are a lot of predefined resources which are specific for a serverless applications.
+> **Serverless has never been so easy!**
+
 
 > Here is a list of libraries, tools, extensions, etc. that need to be installed to run the project.
 
