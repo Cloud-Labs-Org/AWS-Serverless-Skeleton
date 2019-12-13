@@ -4,6 +4,8 @@ branches:
     # Release branches
     - master
 scripts:
+  - npm install
+  - npm run coverage
   - npm install codecov -g
 after_success:
   - codecov --token=55a7cfb1-b771-454e-981a-9df2db0f992c
