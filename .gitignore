@@ -36,3 +36,5 @@ _meta
 
 env/*.yml
 !env/dev-us-east-1.yml
+
+.nyc_output
