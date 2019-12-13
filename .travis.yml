@@ -4,7 +4,6 @@ branches:
     # Release branches
     - master
 scripts:
-  - npm install
   - npm run coverage
   - npm install codecov -g
 after_success:
