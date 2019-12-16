@@ -31,9 +31,21 @@
 
 ## Functions(Lambdas) Architecture
 
-* **Functions:** `functions` directory has subdirectories for RestAPI and WebSocketsAPI
-* **Functions(code):** `src` directory has subdirectories for RestAPI and WebSocketsAPI
+* **Functions:** `functions` directory
+* **Functions(code):** `src` directory has subdirectory: **handlers** for all of the handlers
 
+
+## Tests Architecture
+
+* There is a directory for all of the tests: **spec** - There you can see the same structure as in **src** but with test files.
+
+
+## Commands
+
+* **npm run format:check:** Check you files for any errors and type mismatches.
+* **npm run quality:check:** Do **format:check** and try to solve any problems by itself.
+* **npm run test:** Start all of the tests in te project.
+* **npm run coverage:** Start **npm run test:** and create **coverage** directory with exported code coverage.
 
 ## How to deploy
 
