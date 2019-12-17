@@ -1,4 +1,7 @@
 codecov:
+  bot: cloud-labs-org
+  branch: master
+  strict_yaml_branch: master
   require_ci_to_pass: yes
 
 coverage:
