@@ -1,4 +1,4 @@
-const environment = process.env as {[key: string]: string};
+const environment = process.env as { [key: string]: string };
 
 export class Config {
   public static REGION = environment.REGION;
