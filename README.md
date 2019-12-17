@@ -8,6 +8,7 @@
 [![issues](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/issues)
 [![license](https://img.shields.io/github/license/Cloud-Labs-Org/AWS-Serverless-Skeleton)](https://img.shields.io/github/issues/Cloud-Labs-Org/AWS-Serverless-Skeleton/blob/master/LICENSE)
 
+
 ## What to expect
 
 > The easiest way to start with serverless. Everithing is ready and if you want something just uncomment the code about that.
@@ -40,6 +41,20 @@
 * There is a directory for all of the tests: **spec** - There you can see the same structure as in **src** but with test files.
 
 
+## Already created helpers
+
+* There is a **helpers** directory in **src** where you can find the helpers:
+    - **config.ts**: Config class for all of the Lambda global environments.
+    - **http-request-error.ts**: Custom Error class which is used for custom error handling. Throw this class when you want to throw an error and show the message as a response to the users
+    - **response.ts**: It has a few parameters and a global error handling
+       - First(**callback: Function**): The Amazon's callback from the hambda handler.
+       - Second(**payload: Function**): Function which will be called in a try-catch block. It could be a promise.
+       - Third(**errorResponseObject: {}**): key-value pairs if the response is error.
+       - Fourth(**headers: {}**): Additional response headers.
+       - Fifth(**statusCode: number**): Response status code.
+       - Sixth(**isBase64Encoded: boolean**): If you need base64 encoding.
+
+
 ## Commands
 
 * **npm run format:check:** Check you files for any errors and type mismatches.
@@ -47,8 +62,9 @@
 * **npm run test:** Start all of the tests in te project.
 * **npm run coverage:** Start **npm run test:** and create **coverage** directory with exported code coverage.
 
+
 ## How to deploy
 
 *  Create proper user with access to all needed resources and get the two keys
 *  Configure Serverless Framework: `serverless config credentials --provider aws --key {PUBLIC_KEY} --secret {SECRET_KEY}`
-*  Execute: `serverless deploy` optional: `--region eu-central-1 --stage dev --aws-profile default`
+*  Execute: `serverless deploy` optional: `--region us-east-1 --stage dev --aws-profile default`
